@@ -3,9 +3,11 @@
 
 from __future__ import unicode_literals
 from .user_view import (
-  RegistHandle
+  RegistHandle,
+  TestHandle,
 )
 
 urls = [
-  (r'regist',RegistHandle)
+  (r'regist',RegistHandle),
+  (r'test',TestHandle),
 ]

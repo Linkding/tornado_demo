@@ -4,7 +4,7 @@
 from __future__ import unicode_literals
 from importlib import import_module
 
-#判断是否注册对应路由
+#判断是否注册对应页面的路由，如果存在，获取到此页面所有路由
 def include(module):
   res = import_module(module)
   print ('url_router :res = ' , res)
@@ -15,6 +15,7 @@ def include(module):
 def url_wrapper(urls):
   wrapper_list = []
   for url in urls:
+    print('url: ',url)
     path,handles = url
     print ('path: ', path ,'handles: ', handles)
     if isinstance(handles,(tuple,list)):
