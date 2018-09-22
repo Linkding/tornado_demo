@@ -17,7 +17,7 @@ from conf.base import BaseDB,engine
 class Application(tornado.web.Application):
   def __init__(self):
     initdb(); #创建表结构，如果已有则忽视
-
+   
     #定义路由
     handles = url_wrapper([
       (r"/user/",include('view.user.user_url')),
