@@ -1,0 +1,7 @@
+2018-09-19 22:13:22,558 user_view.py[line:42] DEBUG RegistHandle: request successfully
+2018-09-19 22:20:50,333 user_view.py[line:37] INFO RegistHandle: request argument incorrect
+2018-09-20 15:29:37,949 user_view.py[line:46] INFO RegistHandle: request argument incorrect
+2018-09-20 15:29:48,605 user_view.py[line:59] DEBUG RegistHandle: insert db,user,: 18866668888
+2018-09-20 15:29:48,847 user_view.py[line:66] DEBUG RegistHandle: request successfully
+2018-09-21 11:37:18,760 user_view.py[line:75] INFO test request is fail
+2018-09-21 11:37:45,214 user_view.py[line:76] INFO test request is fail
