@@ -39,8 +39,8 @@ class RegistHandle(tornado.web.RequestHandler):
       #获取入参
       args = json_decode(self.request.body)
       print('args: ',args)
-      header = self.request.headers
-      print('yo ',header["Yo"])
+      method = self.request.method
+      print('yo ',method)
       phone = args['phone']
       password = args['password']
       verify_code = args['code']
