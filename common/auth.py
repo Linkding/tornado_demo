@@ -9,6 +9,9 @@ import time
 import logging
 from logging.handlers import TimedRotatingFileHandler
 
+#导入auth的基本配置
+from auth_base import (AUTH_CONFIG,)
+
 """
 token is generated as the JWT protocol.
 JSON Web Tokens(JWT) are an open, industry standard RFC 7519 method
@@ -29,8 +32,8 @@ class auth:
     def __init__(self,user_id,role_id):
         self.user_id = user_id
         self.role_id = role_id
-        self.secret_key = "yo"
-        self.salt = "yoyo"
+        self.secret_key = AUTH_CONFIG['secret_key']
+        self.salt = AUTH_CONFIG['salt']
 
     def genTokenSeq(self,expires):
         s = Serializer(
